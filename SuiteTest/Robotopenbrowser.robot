@@ -3,24 +3,24 @@ Resource          /Users/giovannianthionia/PycharmProjects/RobotTest/Frameworks/
 #Resource          /Users/giovannianthionia/PycharmProjects/RobotTest/
 
 *** Variables ***
-#${NameHotel}        Roemahkoe Heritage Hotel Boutique
-#${tgl_checkin}      10
-#${tgl_checkout}     11
-#${FullName}         Yanto Surinto
-#${NoHandphone}      08129968393234
-#${eMail}            yanto.surinto@mail.com
+${input_installment_name}      Mandiri
+${button_login}                xpath=//*[@id="__layout"]/div/div[2]/div/div/button
 
 
 
 *** Test Cases ***
-TC001 Open MyHeadless Browsers Keyword
+TC001 Filter Menu Installment
     [Documentation]             Open MyHeadless Browsers Keyword
 	[Tags]                      Website Desktop
 
-	Open Browser                https://payment-gateway.misteralad.in/admin     chrome
+	Open Browser                https://payment-gateway.misteralad.in/     chrome
 	Maximize Browser Window
-	Close Browser
-dsfsfu
+	Click Button                ${button_login}
+    Openbrowser.Input filter installment name    ${input_installment_name}
+    Openbrowser.Input filter produk type
+
+	#Close Browser
+
 #    Browsers.Open MyHeadless Keyword
 #    CommonKey.Allow Permission Website Dekstop
 #    CommonKey.Capture Current Page

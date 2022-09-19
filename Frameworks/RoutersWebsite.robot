@@ -12,8 +12,9 @@ Library                 DateTime
 #Library                ../Library/MolatvLibrary.py
 
 #Frameworks
-Resource                Configs.robot
-
+Resource                    Configs.robot
+Resource                   ../Resource/MisteraladinX/Website_dekstop/Openbrowser.robot
+Resource                   ../Resource/Common/Browsers.robot
 
 ##Resources
 #Resource                ../Resource/MisterAladinX/WebsiteDektop/TechoHotel/ClassHotelByNameHotel.robot
@@ -29,4 +30,3 @@ Resource                Configs.robot
 ##Resources
 ##Resource                ../Resource/MisterAladinX/BrowserMobile/TechoHotel/ClassHotelByNameHotel.robot
 
-Resource                   ../Resource/Common/Browsers.robot
