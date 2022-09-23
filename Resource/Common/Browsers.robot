@@ -25,8 +25,9 @@ Open MyHeadless Keyword
     Call Method         ${options}      add_argument    --disable-extensions
     Call Method         ${options}      add_argument    --disable-notifications
     Call Method         ${options}      add_argument    --disable-infobars
-    my_create_webdriver   Chrome  ${options}
-    Open Browser        ${HOST_URL}      ${BROWSER}
+#    my_create_webdriver   Chrome  ${options}
+#    Open Browser        ${url_sigoes}                ${BROWSER}
+    Open Browser        ${URL_PaymentGateway}                ${BROWSER}
     Maximize Browser Window
 
 #Open MyHeadless Mobile Website Keyword
@@ -67,5 +68,5 @@ Open MyHeadless Keyword
 #    Sleep   3 secs
 #
 #Close Browser
-#    Close Window
+#    Close Browser
 
