@@ -6,6 +6,8 @@ ${LONG_TIMEOUT}                     3s
 ${DELAY}                            0.2
 ${HOST_URL}                         https://staging.misteralad.in/
 ${HOST_WEBMOB}                      https://staging-m.misteralad.in/
+${url_sigoes}                       https://sigoes.com/
+${URL_PaymentGateway}               https://payment-gateway.misteralad.in/
 #${URL_PRODUCT}                      https://staging.misteralad.in/aladintravel/aladinxplore/product/domestik-menikmati-atraksi-lumba-lumba-menikmati-atraksi-lumba-lumba-menikmati-atraksi-lumba-lumba
 #${DEFAULT_TEST_TIMEOUT}             4 minutes
 #${LONG_TEST_TIMEOUT}                9 minutes

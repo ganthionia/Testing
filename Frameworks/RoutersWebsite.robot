@@ -15,6 +15,8 @@ Library                 DateTime
 Resource                    Configs.robot
 Resource                   ../Resource/MisteraladinX/Website_dekstop/Openbrowser.robot
 Resource                   ../Resource/Common/Browsers.robot
+Resource                   ../Resource/Sigoes/sigoes.robot
+Resource                   ../Resource/Charging_Fee/charging_fee.robot
 
 ##Resources
 #Resource                ../Resource/MisterAladinX/WebsiteDektop/TechoHotel/ClassHotelByNameHotel.robot

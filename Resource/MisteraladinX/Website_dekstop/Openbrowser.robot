@@ -22,9 +22,9 @@ Input filter installment name
     Wait Until Element Is Visible       css=div:nth-of-type(2) > .vsm--link.vsm--link_level-1
     Click Element                       css=div:nth-of-type(2) > .vsm--link.vsm--link_level-1
 
-#verify label installment name
-    Wait Until Element Is Visible       xpath=//*[@id="__layout"]/div/div[1]/main/div/div/main/div[2]/div/div[1]/div/div[3]/div
-    Element Should Contain              xpath=//*[@id="__layout"]/div/div[1]/main/div/div/main/div[2]/div/div[1]/div/div[3]/div     Installment Name
+##verify label installment name
+#    Wait Until Element Is Visible       xpath=//*[@id="__layout"]/div/div[1]/main/div/div/main/div[2]/div/div[1]/div/div[3]/div
+#    Element Should Contain              xpath=//*[@id="__layout"]/div/div[1]/main/div/div/main/div[2]/div/div[1]/div/div[3]/div     Installment Name
 
 #input installment name
     Wait Until Page Contains Element    css=.input-group .departure:nth-of-type(3) .p-component
@@ -34,9 +34,18 @@ Input filter installment name
     sleep                               2s
 
 Input filter produk type
-    Wait Until Element Is Visible       css=.input-group .departure:nth-of-type(7) .p-multiselect-label
-    Click Element                       css=.input-group .departure:nth-of-type(7) .p-multiselect-label
-    Sleep                               2s
+#    [Arguments]                         ${xpathToIdCheck}
+#
+#    Mouse over                          ${xpathToIdCheck}
+#    Page Should Contain Element         css=.input-group .departure:nth-of-type(7) .p-multiselect-label    5s
+#    Click Element                       css=.input-group .departure:nth-of-type(7) .p-multiselect-label
+#    Mouse Down    xpath=//li[contains(.,'${STR}')]
+#    Click Element  xpath=//li[contains(.,'${STR}')]
+
+#    Wait Until Element Is Visible       css=.input-group .departure:nth-of-type(7) .p-multiselect-label
+#    Click Element                       css=.input-group .departure:nth-of-type(7) .p-multiselect-label
+#    Sleep                               2s
+#    Wait Until Element Is Visible
 
 #klik button search
     #Click Button                        css=.submit-button

@@ -5,6 +5,7 @@ Resource          /Users/giovannianthionia/PycharmProjects/RobotTest/Frameworks/
 *** Variables ***
 ${input_installment_name}      Mandiri
 ${button_login}                xpath=//*[@id="__layout"]/div/div[2]/div/div/button
+${xpathToIdCheck}              css=.input-group .departure:nth-of-type(7) .p-multiselect-label
 
 
 
