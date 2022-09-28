@@ -5,22 +5,63 @@ Resource                   /Users/giovannianthionia/PycharmProjects/RobotTest/Fr
 ${link_url}                         https://payment-gateway.misteralad.in/
 ${button_login}                     xpath=//*[@id="__layout"]/div/div[2]/div/div/button
 ${menu_chargingfee}                 xpath=//div[@id='__layout']//nav[@class='nav']/div[@class='v-sidebar-menu vsm_expanded vsm_white-theme']//a[@href='/admin/chargingfee']/span[@class='vsm--title']
+${DropdownPayment_Method}           css=.p-multiselect-label.p-placeholder
+${Drop}
+${Checkbox_AllPayment}              xpath=/html/body/div/div/div/div[1]/main/div/div/main/div[2]/div/div[1]/div/div[3]/div/div[4]/div[1]/div[1]/div[2]
 ${Dropdown_Status}                  css=.input-group .departure:nth-of-type(5) .p-dropdown-label
+${DropdownStatusActive}             xpath=/html//div[@id='__layout']/div[@class='main']//main[@class='content']/div[@class='main-content']/div[@class='content']/main/div[2]//ul[@role='listbox']/li[2]
 ${DropdowmStatusInactive}           css=.p-dropdown-items .p-dropdown-item:nth-of-type(3)
+${DropdownStatusAll_status}         css=.p-dropdown-item.p-highlight
 ${Search_Button}                    css=.p-button.p-component.submit-button
 
 
 
 *** Keywords ***
 
-Filter charging fee
+Page Login
     Wait Until Element Is Visible       ${button_login}
     Click Element                       ${button_login}
+
+Menu Charging Fee
     Wait Until Element Is Visible       ${menu_chargingfee}
     Click Element                       ${menu_chargingfee}
-#    Wait Until Element Is Visible       ${Dropdown_Status}
-#    Sleep                               2s
+
+Filter payment method
+    Wait Until Element Is Visible       ${DropdownPayment_Method}
+    Click Element                       ${DropdownPayment_Method}
+    Sleep                               5s
+    Click Element                       ${Checkbox_AllPayment}
+
+    Wait Until Element Is Visible       ${Dropdownpayment_method}
+    Click Element                       ${DropdownPayment_Method}
+    Click Element                       ${Search_Button}
+
+Filter status charging fee
+    Wait Until Element Is Visible       ${Dropdown_Status}
+    Sleep                               2s
+    Click Element                       ${Dropdown_Status}
+
+    Wait Until Element Is Visible       ${DropdownStatusActive}
+    Click Element                       ${DropdownStatusActive}
+    Click Element                       ${Search_Button}
 #    Click Element                       ${Dropdown_Status}
+    Sleep                               5s
+
+    Wait Until Element Is Visible       ${Dropdown_Status}
+    Click Element                       ${Dropdown_Status}
+    Wait Until Element Is Visible       ${DropdowmStatusInactive}
+    Click Element                       ${DropdowmStatusInactive}
+    Click Element                       ${Search_Button}
+#    Click Element                       ${Dropdown_Status}
+    Sleep                               5s
+
+    Wait Until Element Is Visible       ${Dropdown_Status}
+    Click Element                       ${Dropdown_Status}
+    Wait Until Element Is Visible       ${DropdownStatusAll_status}
+    Click Element                       ${DropdownStatusAll_status}
+    Click Element                       ${Search_Button}
+    Sleep                               5s
+
 
 Choose filter start date time
     [Arguments]                         ${startdate}

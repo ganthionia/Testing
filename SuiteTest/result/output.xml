@@ -1,220 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.7 on darwin)" generated="20220923 19:08:26.697" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.7 on darwin)" generated="20220928 16:55:02.914" rpa="false" schemaversion="3">
 <suite id="s1" name="ChargingFee" source="/Users/giovannianthionia/PycharmProjects/RobotTest/SuiteTest/ChargingFee.robot">
-<test id="s1-t1" name="TC 001 Open browser" line="14">
+<test id="s1-t1" name="TC 001 Filter charging fee" line="14">
 <kw name="Open MyHeadless Keyword" library="Browsers">
 <kw name="Evaluate" library="BuiltIn">
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220923 19:08:26.906" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x10be04e20&gt;</msg>
-<status status="PASS" starttime="20220923 19:08:26.906" endtime="20220923 19:08:26.906"/>
+<msg timestamp="20220928 16:55:03.112" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x10faf2e00&gt;</msg>
+<status status="PASS" starttime="20220928 16:55:03.112" endtime="20220928 16:55:03.112"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--headless</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20220923 19:08:26.906" endtime="20220923 19:08:26.906"/>
+<status status="PASS" starttime="20220928 16:55:03.112" endtime="20220928 16:55:03.112"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>test-type</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20220923 19:08:26.906" endtime="20220923 19:08:26.906"/>
+<status status="PASS" starttime="20220928 16:55:03.112" endtime="20220928 16:55:03.112"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20220923 19:08:26.906" endtime="20220923 19:08:26.906"/>
+<status status="PASS" starttime="20220928 16:55:03.112" endtime="20220928 16:55:03.112"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-gpu</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20220923 19:08:26.906" endtime="20220923 19:08:26.906"/>
+<status status="PASS" starttime="20220928 16:55:03.112" endtime="20220928 16:55:03.112"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-extensions</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20220923 19:08:26.907" endtime="20220923 19:08:26.907"/>
+<status status="PASS" starttime="20220928 16:55:03.113" endtime="20220928 16:55:03.113"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-popup-blocking</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20220923 19:08:26.907" endtime="20220923 19:08:26.907"/>
+<status status="PASS" starttime="20220928 16:55:03.113" endtime="20220928 16:55:03.113"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--ignore-certificate-errors</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20220923 19:08:26.907" endtime="20220923 19:08:26.907"/>
+<status status="PASS" starttime="20220928 16:55:03.113" endtime="20220928 16:55:03.113"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-extensions</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20220923 19:08:26.907" endtime="20220923 19:08:26.907"/>
+<status status="PASS" starttime="20220928 16:55:03.113" endtime="20220928 16:55:03.113"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-notifications</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20220923 19:08:26.907" endtime="20220923 19:08:26.907"/>
+<status status="PASS" starttime="20220928 16:55:03.113" endtime="20220928 16:55:03.113"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-infobars</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20220923 19:08:26.907" endtime="20220923 19:08:26.907"/>
+<status status="PASS" starttime="20220928 16:55:03.113" endtime="20220928 16:55:03.113"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL_PaymentGateway}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220923 19:08:26.908" level="INFO">Opening browser 'chrome' to base url 'https://payment-gateway.misteralad.in/'.</msg>
-<status status="PASS" starttime="20220923 19:08:26.907" endtime="20220923 19:08:34.901"/>
+<msg timestamp="20220928 16:55:03.114" level="INFO">Opening browser 'chrome' to base url 'https://payment-gateway.misteralad.in/'.</msg>
+<status status="PASS" starttime="20220928 16:55:03.113" endtime="20220928 16:55:11.814"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220923 19:08:34.902" endtime="20220923 19:08:35.034"/>
+<status status="PASS" starttime="20220928 16:55:11.816" endtime="20220928 16:55:12.366"/>
 </kw>
-<status status="PASS" starttime="20220923 19:08:26.905" endtime="20220923 19:08:35.035"/>
+<status status="PASS" starttime="20220928 16:55:03.111" endtime="20220928 16:55:12.366"/>
 </kw>
-<kw name="Filter charging fee" library="charging_fee">
+<kw name="Page Login" library="charging_fee">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${button_login}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 19:08:35.035" endtime="20220923 19:08:35.170"/>
+<status status="PASS" starttime="20220928 16:55:12.370" endtime="20220928 16:55:12.500"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${button_login}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 19:08:35.170" level="INFO">Clicking element 'xpath=//*[@id="__layout"]/div/div[2]/div/div/button'.</msg>
-<status status="PASS" starttime="20220923 19:08:35.170" endtime="20220923 19:08:35.378"/>
+<msg timestamp="20220928 16:55:12.501" level="INFO">Clicking element 'xpath=//*[@id="__layout"]/div/div[2]/div/div/button'.</msg>
+<status status="PASS" starttime="20220928 16:55:12.500" endtime="20220928 16:55:12.641"/>
 </kw>
+<status status="PASS" starttime="20220928 16:55:12.368" endtime="20220928 16:55:12.641"/>
+</kw>
+<kw name="Menu Charging Fee" library="charging_fee">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${menu_chargingfee}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 19:08:35.378" endtime="20220923 19:08:36.133"/>
+<status status="PASS" starttime="20220928 16:55:12.642" endtime="20220928 16:55:13.776"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${menu_chargingfee}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 19:08:36.133" level="INFO">Clicking element 'xpath=//div[@id='__layout']//nav[@class='nav']/div[@class='v-sidebar-menu vsm_expanded vsm_white-theme']//a[@href='/admin/chargingfee']/span[@class='vsm--title']'.</msg>
-<status status="PASS" starttime="20220923 19:08:36.133" endtime="20220923 19:08:36.295"/>
+<msg timestamp="20220928 16:55:13.776" level="INFO">Clicking element 'xpath=//div[@id='__layout']//nav[@class='nav']/div[@class='v-sidebar-menu vsm_expanded vsm_white-theme']//a[@href='/admin/chargingfee']/span[@class='vsm--title']'.</msg>
+<status status="PASS" starttime="20220928 16:55:13.776" endtime="20220928 16:55:14.010"/>
 </kw>
-<status status="PASS" starttime="20220923 19:08:35.035" endtime="20220923 19:08:36.295"/>
+<status status="PASS" starttime="20220928 16:55:12.641" endtime="20220928 16:55:14.010"/>
 </kw>
-<kw name="Choose filter start date time" library="charging_fee">
-<arg>${startdate}</arg>
-<kw name="Get Current Date" library="DateTime">
-<var>${startdate}</var>
-<arg>increment=1 day</arg>
-<arg>result_format=%d</arg>
-<doc>Returns current local or UTC time with an optional increment.</doc>
-<msg timestamp="20220923 19:08:36.296" level="INFO">${startdate} = 24</msg>
-<status status="PASS" starttime="20220923 19:08:36.296" endtime="20220923 19:08:36.296"/>
-</kw>
-<kw name="Convert To Integer" library="BuiltIn">
-<var>${startdate}</var>
-<arg>${startdate}</arg>
-<doc>Converts the given item to an integer number.</doc>
-<msg timestamp="20220923 19:08:36.297" level="INFO">${startdate} = 24</msg>
-<status status="PASS" starttime="20220923 19:08:36.297" endtime="20220923 19:08:36.297"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>NEXT DAY ${startdate}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220923 19:08:36.297" level="INFO">NEXT DAY 24</msg>
-<status status="PASS" starttime="20220923 19:08:36.297" endtime="20220923 19:08:36.297"/>
-</kw>
+<kw name="Filter payment method" library="charging_fee">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>css=.input-group .departure:nth-of-type(1) [tabindex='-1']</arg>
+<arg>${DropdownPayment_Method}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 19:08:36.297" endtime="20220923 19:08:41.304"/>
+<status status="PASS" starttime="20220928 16:55:14.010" endtime="20220928 16:55:14.868"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DropdownPayment_Method}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220928 16:55:14.869" level="INFO">Clicking element 'css=.p-multiselect-label.p-placeholder'.</msg>
+<status status="PASS" starttime="20220928 16:55:14.868" endtime="20220928 16:55:15.638"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>${DELAY}</arg>
+<arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220923 19:08:41.505" level="INFO">Slept 200 milliseconds</msg>
-<status status="PASS" starttime="20220923 19:08:41.304" endtime="20220923 19:08:41.505"/>
+<msg timestamp="20220928 16:55:20.641" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220928 16:55:15.638" endtime="20220928 16:55:20.642"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>css=.input-group .departure:nth-of-type(1) [tabindex='-1']</arg>
+<arg>${Checkbox_AllPayment}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 19:08:41.506" level="INFO">Clicking element 'css=.input-group .departure:nth-of-type(1) [tabindex='-1']'.</msg>
-<status status="PASS" starttime="20220923 19:08:41.505" endtime="20220923 19:08:43.208"/>
+<msg timestamp="20220928 16:55:20.644" level="INFO">Clicking element 'xpath=/html/body/div/div/div/div[1]/main/div/div/main/div[2]/div/div[1]/div/div[3]/div/div[4]/div[1]/div[1]/div[2]'.</msg>
+<status status="PASS" starttime="20220928 16:55:20.643" endtime="20220928 16:55:21.093"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//span[contains(.,'${startdate}')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 19:08:43.209" level="INFO">Clicking element 'xpath=//span[contains(.,'24')]'.</msg>
-<status status="PASS" starttime="20220923 19:08:43.209" endtime="20220923 19:08:43.619"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>6s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220923 19:08:49.622" level="INFO">Slept 6 seconds</msg>
-<status status="PASS" starttime="20220923 19:08:43.619" endtime="20220923 19:08:49.623"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>css=.input-group .departure:nth-of-type(1) [tabindex='-1']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 19:08:49.625" level="INFO">Clicking element 'css=.input-group .departure:nth-of-type(1) [tabindex='-1']'.</msg>
-<status status="PASS" starttime="20220923 19:08:49.624" endtime="20220923 19:08:49.702"/>
-</kw>
-<status status="PASS" starttime="20220923 19:08:36.296" endtime="20220923 19:08:49.702"/>
-</kw>
-<kw name="Click Button Search" library="charging_fee">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${Search_Button}</arg>
+<arg>${Dropdownpayment_method}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 19:08:49.703" endtime="20220923 19:08:49.717"/>
+<msg timestamp="20220928 16:55:26.686" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-48.png"&gt;&lt;img src="selenium-screenshot-48.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220928 16:55:26.687" level="FAIL">Element 'css=.p-multiselect-label.p-placeholder' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20220928 16:55:21.093" endtime="20220928 16:55:26.689"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DropdownPayment_Method}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220928 16:55:26.690" endtime="20220928 16:55:26.690"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Search_Button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 19:08:49.717" level="INFO">Clicking element 'css=.p-button.p-component.submit-button'.</msg>
-<status status="PASS" starttime="20220923 19:08:49.717" endtime="20220923 19:08:49.902"/>
+<status status="NOT RUN" starttime="20220928 16:55:26.690" endtime="20220928 16:55:26.690"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>10s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220923 19:08:59.906" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20220923 19:08:49.903" endtime="20220923 19:08:59.913"/>
-</kw>
-<status status="PASS" starttime="20220923 19:08:49.703" endtime="20220923 19:08:59.914"/>
+<status status="FAIL" starttime="20220928 16:55:14.010" endtime="20220928 16:55:26.690"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220923 19:08:59.915" endtime="20220923 19:09:00.001"/>
+<status status="NOT RUN" starttime="20220928 16:55:26.690" endtime="20220928 16:55:26.690"/>
 </kw>
-<status status="PASS" starttime="20220923 19:08:26.905" endtime="20220923 19:09:00.001"/>
+<status status="FAIL" starttime="20220928 16:55:03.111" endtime="20220928 16:55:26.690">Element 'css=.p-multiselect-label.p-placeholder' not visible after 5 seconds.</status>
 </test>
-<status status="PASS" starttime="20220923 19:08:26.702" endtime="20220923 19:09:00.002"/>
+<status status="FAIL" starttime="20220928 16:55:02.915" endtime="20220928 16:55:26.691"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="ChargingFee">ChargingFee</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="ChargingFee">ChargingFee</stat>
 </suite>
 </statistics>
 <errors>
