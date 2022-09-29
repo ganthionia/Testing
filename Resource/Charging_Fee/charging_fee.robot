@@ -1,24 +1,24 @@
 *** Settings ***
-Resource                   /Users/giovannianthionia/PycharmProjects/RobotTest/Frameworks/RoutersWebsite.robot
+Resource                            /Users/giovannianthionia/PycharmProjects/RobotTest/Frameworks/RoutersWebsite.robot
 
 *** Variables ***
 ${link_url}                         https://payment-gateway.misteralad.in/
 ${button_login}                     xpath=//*[@id="__layout"]/div/div[2]/div/div/button
 ${menu_chargingfee}                 xpath=//div[@id='__layout']//nav[@class='nav']/div[@class='v-sidebar-menu vsm_expanded vsm_white-theme']//a[@href='/admin/chargingfee']/span[@class='vsm--title']
 ${DropdownPayment_Method}           css=.p-multiselect-label.p-placeholder
-${Drop}
 ${Checkbox_AllPayment}              xpath=/html/body/div/div/div/div[1]/main/div/div/main/div[2]/div/div[1]/div/div[3]/div/div[4]/div[1]/div[1]/div[2]
 ${Dropdown_Status}                  css=.input-group .departure:nth-of-type(5) .p-dropdown-label
 ${DropdownStatusActive}             xpath=/html//div[@id='__layout']/div[@class='main']//main[@class='content']/div[@class='main-content']/div[@class='content']/main/div[2]//ul[@role='listbox']/li[2]
 ${DropdowmStatusInactive}           css=.p-dropdown-items .p-dropdown-item:nth-of-type(3)
 ${DropdownStatusAll_status}         css=.p-dropdown-item.p-highlight
 ${Search_Button}                    css=.p-button.p-component.submit-button
+${Clear_filter}                     css=.p-button-outlined.p-button
 
 
 
 *** Keywords ***
 
-Page Login
+Page_login
     Wait Until Element Is Visible       ${button_login}
     Click Element                       ${button_login}
 
@@ -62,7 +62,6 @@ Filter status charging fee
     Click Element                       ${Search_Button}
     Sleep                               5s
 
-
 Choose filter start date time
     [Arguments]                         ${startdate}
     ${startdate}                  Get Current Date            increment=1 day             result_format=%d
@@ -81,3 +80,19 @@ Click Button Search
     Click Element                   ${Search_Button}
     Sleep                           10s
 
+Clear filter
+    Wait Until Element Is Visible    ${Clear_filter}
+    Click Element                    ${Clear_filter}
+
+Kombinasi Filter
+    Wait Until Element Is Visible       ${Dropdown_Status}
+    Sleep                               2s
+    Click Element                       ${Dropdown_Status}
+
+    Wait Until Element Is Visible       ${DropdownStatusActive}
+    Click Element                       ${DropdownStatusActive}
+
+    Wait Until Element Is Visible       ${Clear_filter}
+    Click Element                       ${Clear_filter}
+
+    
