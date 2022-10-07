@@ -17,6 +17,7 @@ TC 001 Filter charging fee
     charging_fee.Page Login
     charging_fee.Menu Charging Fee
     charging_fee.Kombinasi Filter
+    # charging_fee.Filter Type
 #    charging_fee.Filter status charging fee
 #    charging_fee.Choose filter start date time              ${startdate}
 #    charging_fee.Click Button Search
