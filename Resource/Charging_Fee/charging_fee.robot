@@ -1,5 +1,5 @@
 *** Settings ***
-Resource                   /Users/giovannianthionia/PycharmProjects/RobotTest/Frameworks/RoutersWebsite.robot
+Resource                            /Users/giovannianthionia/PycharmProjects/RobotTest/Frameworks/RoutersWebsite.robot
 
 *** Variables ***
 ${link_url}                         https://payment-gateway.misteralad.in/
@@ -18,7 +18,7 @@ ${Clear_filter}                     css=.p-button-outlined.p-button
 
 *** Keywords ***
 
-Page Login
+Page_login
     Wait Until Element Is Visible       ${button_login}
     Click Element                       ${button_login}
 
@@ -35,9 +35,6 @@ Filter payment method
     Wait Until Element Is Visible       ${Dropdownpayment_method}
     Click Element                       ${DropdownPayment_Method}
     Click Element                       ${Search_Button}
-
-Filter Type
-
 
 Filter status charging fee
     Wait Until Element Is Visible       ${Dropdown_Status}
@@ -64,7 +61,6 @@ Filter status charging fee
     Click Element                       ${DropdownStatusAll_status}
     Click Element                       ${Search_Button}
     Sleep                               5s
-
 
 Choose filter start date time
     [Arguments]                         ${startdate}
@@ -98,3 +94,5 @@ Kombinasi Filter
 
     Wait Until Element Is Visible       ${Clear_filter}
     Click Element                       ${Clear_filter}
+
+    

@@ -1,5 +1,6 @@
 *** Settings ***
-Resource                    /Users/giovannianthionia/PycharmProjects/RobotTest/Frameworks/RoutersWebsite.robot
+Resource       /Users/giovannianthionia/PycharmProjects/RobotTest/Frameworks/RoutersWebsite.robot
+
 #Library                     Selenium2Library
 #Library         Process
 #Library         Dialogs
@@ -15,8 +16,11 @@ TC 001 Filter charging fee
     Browsers.Open MyHeadless Keyword
     charging_fee.Page Login
     charging_fee.Menu Charging Fee
-    charging_fee.Filter payment method
+    charging_fee.Kombinasi Filter
+    # charging_fee.Filter Type
 #    charging_fee.Filter status charging fee
 #    charging_fee.Choose filter start date time              ${startdate}
 #    charging_fee.Click Button Search
     Close Browser
+
+# 
