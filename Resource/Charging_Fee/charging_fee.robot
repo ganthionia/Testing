@@ -36,6 +36,9 @@ Filter payment method
     Click Element                       ${DropdownPayment_Method}
     Click Element                       ${Search_Button}
 
+Filter Type
+
+
 Filter status charging fee
     Wait Until Element Is Visible       ${Dropdown_Status}
     Sleep                               2s
